@@ -1,0 +1,366 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900');
+ *{margin:0; padding:0}
+ a{text-decoration:none}
+ li{list-style:none}
+ img{display:block}
+ body, div, p, li, a, h1, h2, h3, h4, h5, h6, address{font-style:normal; font-family:Noto Sans KR, sans-serif; font-size:14px; color:#333} 
+ /*font-family: 'Noto Sans KR', sans-serif;*/
+ 
+ /*PC 1100*/
+ @media screen and (min-width:1101px){
+ /*header*/
+ .lnbBtn{display:none}
+#header{position:relative; width:1100px; height:80px; margin:0 auto; border-bottom:1px solid #CCC; margin-bottom:30px}
+#header>h1{line-height:80px}
+#header>h1>a>img{position:absolute; left:0; top:17px}
+#header>nav{position:absolute; right:0; top:0}
+#header>nav>ul{overflow:hidden}
+#header>nav>ul>li{float:left; list-style:none}
+#header>nav>ul>li>a{display:block; line-height:80px; padding:0 20px; color:#666; text-decoration:none; font-size:14px; font-weight:bold; font-family:Arial,sans-serif}  
+ 
+ 
+ /*section*/
+ #contents{position:relative; width:1100px; margin:0 auto}
+ #contents>div>img{width:100%; margin-top:40px;}
+ #contents>h2{text-align:center; font-size:1.6em; margin-bottom:40px; border-bottom:1px solid #CCC; padding-bottom:30px}
+ 
+ 
+ /*about start*/
+.aboutWrap>img{width:100%}
+.aboutWrap>div{position:relative; margin-bottom:20px}
+.aboutWrap>div>.overBox{position:absolute; left:0; top:0; width:100%; padding:170px 50px}
+.aboutWrap>div>.overBox>h4{font-size:5em; color:#FFF}
+.aboutWrap>div>.overBox>p>a{font-size:1.6em; color:#FFF;}
+.aboutWrap>div>.overBox>p>a:hover{text-decoration:underline}
+.aboutWrap>.aboutTextWrap{margin:80px 0}
+.aboutWrap>.aboutTextWrap>div>h4{font-size:54px; line-height:100px; text-align:center; margin-top:210px}
+.aboutWrap>.aboutTextWrap>div>p{font-size:18px; line-height:2em; text-align:center; margin-bottom:50px}
+.aboutWrap>.aboutTextWrap>.leftText{}
+.aboutWrap>.aboutTextWrap>.rightImg>div{position:relative}
+.aboutWrap>.aboutTextWrap>.rightImg img{width:85%; margin:0 auto}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2{position:absolute; left:0; top:0; width:100%; padding:600px 100px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2>h4{font-size:42px; line-height:45px; font-weight:500; margin-bottom:30px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2>p{font-size:18; line-height:25px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2>p:nth-child(2){margin-bottom:20px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3{position:absolute; left:0; top:0; width:100%; padding-top:860px; padding-left:800px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3>h4{font-size:42px; line-height:45px; font-weight:500; margin-bottom:30px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3>p{font-size:18; line-height:25px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3>p:nth-child(2){margin-bottom:20px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>h4{font-size:54px; line-height:100px; text-align:center}
+.aboutWrap>.aboutTextWrap>.rightImg>div>p{font-size:18px; line-height:2em; text-align:center; margin-bottom:50px}
+.aboutWrap>.serviceList{overflow:hidden}
+.aboutWrap>.serviceList>li{float:left; width:49%; margin-left:2%}
+.aboutWrap>.serviceList>li>div{position:relative}
+.aboutWrap>.serviceList>li>div>.overBox4{position:absolute; left:0; top:0; width:100%; padding:50px 0}
+.aboutWrap>.serviceList>li>div>.overBox4>h4{font-size:32px; line-height:45px; margin-bottom:30px; color:#FFF;}
+.aboutWrap>.serviceList>li>div>.overBox4>p>a{font-size:18px; line-height:25px; color:#FFF;}
+.aboutWrap>.serviceList>li>div>.overBox5{position:absolute; left:0; top:0; width:100%; padding:50px 0}
+.aboutWrap>.serviceList>li>div>.overBox5>h4{font-size:32px; line-height:45px; margin-bottom:30px; color:#FFF;}
+.aboutWrap>.serviceList>li>div>.overBox5>p>a{font-size:18px; line-height:25px; color:#FFF;}	 
+.aboutWrap>.serviceList>li:first-child{margin-left:0}
+.aboutWrap>.serviceList>li img{margin-bottom:20px; width:100%}
+.aboutWrap>.serviceList>li h4{text-align:center; font:1.2em; font-weight:bold; line-height:3em}
+.aboutWrap>.serviceList>li p{text-align:center; line-height:3em}
+
+/*news*/
+.newsWrap>.newsList{overflow:hidden}
+.newsWrap>.newsList>li{float:left; width:32%; margin-left:2%; margin-bottom:40px}
+.newsWrap>.newsList>li:first-child{float:left; width:100%}
+.newsWrap>.newsList>li:nth-child(3n+1){margin-left:0}
+.newsWrap>.newsList>li img{width:100%; margin-bottom:20px}
+.newsWrap>.newsList>li h3{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.newsWrap>.newsList>li p{text-align:center; line-height:3em}
+
+/*portfolio*/
+.portfolioList{overflow:hidden}
+.portfolioList>li{position:relative; float:left; width:23.5%; margin-left:2%; margin-bottom:20px; height:360px; background-size:cover}
+.portfolioList>li:nth-child(4n+1){margin-left:0}
+.portfolioList>li>.overBox{position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.2);
+opacity:0; transition-duration:0.5s}
+.portfolioList>li>.overBox:hover{opacity:1}
+.portfolioList>li>.overBox h3{color:#FFF; text-align:center; position:relative; top:45%}
+.portfolioList>li>.overBox p{color:#FFF; text-align:center; position:relative; top:55%}
+
+/*contact us*/
+.contactWrap{}
+.contactWrap>.contact{overflow:hidden; padding-top:40px; padding-left:40px}
+.contactWrap>.contact h3{font-size:2em; font-weight:900; color:#000; margin-bottom:30px}
+.contactWrap>.contact p{line-height:2em; color:#666}
+.contactWrap>.contact>.conLeft{float:left; width:49%}
+.contactWrap>.contact>.conLeft label{display:block;line-height:2em; margin-top:20px}
+.contactWrap>.contact>.conLeft input[type=text]{width:100%; border:1px solid #CCC; height:45px}
+.contactWrap>.contact>.conLeft textarea{width:100%; border:1px solid #CCC; height:180px}
+.contactWrap>.contact>.conLeft input[type=submit]{width:100px; height:45px; background-color:#666; color:#FFF; margin-top:20px; border:0}
+.contactWrap>.contact>.conRight{float:right; width:40%}
+.contactWrap>.contact>.conRight address{font-style:normal; line-height:2em}
+
+
+ /*footer start*/
+footer{position:absolute; width:100%; height:100px; margin:0 auto; border-top:1px solid #CCC; margin-top:30px; background-color:#111;}
+footer>address{text-align:center; font-size:14px; color:#FFF; padding-top:30px}
+footer>p{text-align:center; font-size:14px; color:#FFF; padding-bottom:30px}
+}
+
+
+ /*태블릿 760*/
+ @media screen and (min-width:761px) and (max-width:1100px){
+ /*header*/
+ .lnbBtn{display:none}
+#header{position:relative; width:94%; height:80px; margin:0 auto; border-bottom:1px solid #CCC; margin-bottom:30px}
+#header>h1{line-height:80px}
+#header>h1>a>img{position:absolute; left:0; top:17px}
+#header>nav{position:absolute; right:0; top:0}
+#header>nav>ul{overflow:hidden}
+#header>nav>ul>li{float:left; list-style:none}
+#header>nav>ul>li>a{display:block; line-height:80px; padding:0 20px; color:#666; text-decoration:none; font-size:14px; font-weight:bold; font-family:Arial,sans-serif}
+
+ 
+ 
+ /*section*/
+ #contents{position:relative; width:94%; margin:0 auto}
+ #contents>h2{text-align:center; font-size:1.6em; margin-bottom:40px; border-bottom:1px solid #CCC; padding-bottom:30px}
+
+ 
+ /*about start*/
+.aboutWrap>img{width:100%}
+.aboutWrap>div{position:relative; margin-left:20px; margin-bottom:20px}
+.aboutWrap>div>.overBox{position:absolute; left:0; top:0; width:100%; height:100%; background-image:url(../images/over_bg.png); opacity:0; transition-duration:1s}
+.aboutWrap>div>.overBox:hover{opacity:1}
+.aboutWrap>.aboutTextWrap{overflow:hidden; margin:80px 0}
+.aboutWrap>.aboutTextWrap>.leftText{float:left; width:48.5%}
+.aboutWrap>.aboutTextWrap>.leftText h3{font-size:3em; font-weight:bold; color:#222}
+.aboutWrap>.aboutTextWrap>.leftText p{font-size:1.4em}
+.aboutWrap>.aboutTextWrap>.rightImg{float:right; width:48.5%; text-align:justify; line-height:2em; color:#666}
+.aboutWrap>.serviceList{overflow:hidden}
+.aboutWrap>.serviceList>li{float:left; width:32%; margin-left:2%}
+.aboutWrap>.serviceList>li:first-child{margin-left:0}
+.aboutWrap>.serviceList>li img{margin-bottom:20px; width:100%}
+.aboutWrap>.serviceList>li h4{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.aboutWrap>.serviceList>li p{text-align:center; line-height:3em}
+
+	 
+
+
+/*
+.aboutWrap>div>.overBox>h4{font-size:5em; color:#FFF}
+.aboutWrap>div>.overBox>p>a{font-size:1.6em; color:#FFF;}
+.aboutWrap>div>.overBox>p>a:hover{text-decoration:underline}
+.aboutWrap>.aboutTextWrap{margin:80px 0}
+.aboutWrap>.aboutTextWrap>div>h4{font-size:54px; line-height:100px; text-align:center; margin-top:210px}
+.aboutWrap>.aboutTextWrap>div>p{font-size:18px; line-height:2em; text-align:center; margin-bottom:50px}
+.aboutWrap>.aboutTextWrap>.leftText{}
+.aboutWrap>.aboutTextWrap>.rightImg>div{position:relative}
+.aboutWrap>.aboutTextWrap>.rightImg img{width:85%; margin:0 auto}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2{position:absolute; left:0; top:0; width:100%; padding:600px 100px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2>h4{font-size:42px; line-height:45px; font-weight:500; margin-bottom:30px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2>p{font-size:18; line-height:25px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox2>p:nth-child(2){margin-bottom:20px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3{position:absolute; left:0; top:0; width:100%; padding-top:860px; padding-left:800px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3>h4{font-size:42px; line-height:45px; font-weight:500; margin-bottom:30px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3>p{font-size:18; line-height:25px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>.overBox3>p:nth-child(2){margin-bottom:20px}
+.aboutWrap>.aboutTextWrap>.rightImg>div>h4{font-size:54px; line-height:100px; text-align:center}
+.aboutWrap>.aboutTextWrap>.rightImg>div>p{font-size:18px; line-height:2em; text-align:center; margin-bottom:50px}
+
+.aboutWrap>.serviceList>li>div{position:relative}
+.aboutWrap>.serviceList>li>div>.overBox4{position:absolute; left:0; top:0; width:100%; padding:50px 0}
+.aboutWrap>.serviceList>li>div>.overBox4>h4{font-size:32px; line-height:45px; margin-bottom:30px; color:#FFF;}
+.aboutWrap>.serviceList>li>div>.overBox4>p>a{font-size:18px; line-height:25px; color:#FFF;}
+.aboutWrap>.serviceList>li>div>.overBox5{position:absolute; left:0; top:0; width:100%; padding:50px 0}
+.aboutWrap>.serviceList>li>div>.overBox5>h4{font-size:32px; line-height:45px; margin-bottom:30px; color:#FFF;}
+.aboutWrap>.serviceList>li>div>.overBox5>p>a{font-size:18px; line-height:25px; color:#FFF;}*/
+
+
+
+	 
+
+
+/*news*/
+.newsWrap>.newsList{overflow:hidden}
+.newsWrap>.newsList>li{float:left; width:32%; margin-left:2%; margin-bottom:40px}
+.newsWrap>.newsList>li:first-child{float:left; width:100%}
+.newsWrap>.newsList>li:nth-child(3n+1){margin-left:0}
+.newsWrap>.newsList>li img{width:100%; margin-bottom:20px}
+.newsWrap>.newsList>li h3{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.newsWrap>.newsList>li p{text-align:center; line-height:2em; height:3em; color:#666}
+
+
+
+/*portfolio*/
+.portfolioList{overflow:hidden}
+.portfolioList>li{position:relative; float:left; width:32%; margin-left:2%; margin-bottom:20px; height:360px; background-size:cover}
+.portfolioList>li:nth-child(3n+1){margin-left:0}
+.portfolioList>li>.overBox{position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.2);
+opacity:0; transition-duration:0.5s}
+.portfolioList>li>.overBox:hover{opacity:1}
+.portfolioList>li>.overBox h3{color:#FFF; text-align:center; position:relative; top:45%}
+.portfolioList>li>.overBox p{color:#FFF; text-align:center; position:relative; top:55%}
+
+/*contact us*/
+.contactWrap{}
+.contactWrap>.contact{overflow:hidden; padding-top:40px}
+.contactWrap>.contact h3{font-size:2em; font-weight:900; color:#000; margin-bottom:30px}
+.contactWrap>.contact p{line-height:2em; color:#666}
+.contactWrap>.contact>.conLeft{float:left; width:49%}
+.contactWrap>.contact>.conLeft label{display:block;line-height:2em; margin-top:20px}
+.contactWrap>.contact>.conLeft input[type=text]{width:95%; border:1px solid #CCC; height:45px}
+.contactWrap>.contact>.conLeft textarea{width:95%; border:1px solid #CCC; height:180px}
+.contactWrap>.contact>.conLeft input[type=submit]{width:100px; height:45px; background-color:#666; color:#FFF; margin-top:20px; border:0}
+.contactWrap>.contact>.conRight{float:right; width:49%}
+.contactWrap>.contact>.conRight address{font-style:normal; line-height:2em}
+
+ /*footer start*/
+ footer{width:100%; height:100px; margin:0 auto; border-top:1px solid #CCC; margin-top:30px; background-color:#111;}
+footer>address{text-align:center; font-size:14px; color:#FFF; padding-top:30px}
+footer>p{text-align:center; font-size:14px; color:#FFF; padding-bottom:30px}
+}
+
+
+
+
+ 
+ 
+
+
+
+
+ /*태블릿2*/
+ @media screen and (min-width:541px) and (max-width:760px){
+ /*header*/
+ #header{position:relative; border-bottom:1px solid #CCC; margin-bottom:30px; width:94%; margin:0 auto}
+#header>h1>a>img{height:46px; margin:17px auto}
+#header>nav{position:relative; display:none}
+#header>nav>ul>li>a{display:block; line-height:60px; color:#666; text-decoration:none; font-size:14px; font-weight:bold; font-family:Arial,sans-serif; text-align:center; background-color:#FFF}
+.lnbBtn{position:absolute; left:10px; top:15px}
+  
+ 
+ 
+ /*section*/
+ #contents{position:relative; width:94%; margin:0 auto}
+ #contents>h2{text-align:center; font-size:1.6em; margin-bottom:40px; border-bottom:1px solid #CCC; line-height:80px}
+ 
+ 
+ /*about start*/
+.aboutWrap>img{width:100%}
+.aboutWrap>.aboutTextWrap{overflow:hidden; margin:80px 0}
+.aboutWrap>.aboutTextWrap>.leftText h3{font-size:3em; font-weight:bold; color:#222}
+.aboutWrap>.aboutTextWrap>.leftText p{font-size:1.4em}
+.aboutWrap>.aboutTextWrap>.rightText{text-align:justify; line-height:2em; color:#666; margin-top:50px}
+.aboutWrap>.serviceList{overflow:hidden}
+.aboutWrap>.serviceList>li{overflow:hidden; margin-bottom:30px}
+.aboutWrap>.serviceList>li img{width:40%; float:left; margin-right:20px}
+.aboutWrap>.serviceList>li h3{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.aboutWrap>.serviceList>li p{text-align:center; line-height:3em}
+
+
+.newsWrap>.newsList{overflow:hidden}
+.newsWrap>.newsList>li{float:left; width:49%; margin-left:2%; margin-bottom:40px}
+.newsWrap>.newsList>li:first-child{float:left; width:100%}
+.newsWrap>.newsList>li:nth-child(2n+1){margin-left:0}
+.newsWrap>.newsList>li img{width:100%; margin-bottom:20px}
+.newsWrap>.newsList>li h3{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.newsWrap>.newsList>li p{text-align:center; line-height:2em; height:3em; color:#666}
+
+
+/*portfolio*/
+.portfolioList{overflow:hidden}
+.portfolioList>li{position:relative; float:left; width:49%; margin-left:2%; margin-bottom:20px; height:360px; background-size:cover; background-position:center}
+.portfolioList>li:nth-child(2n+1){margin-left:0}
+.portfolioList>li>.overBox{position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.2);
+opacity:0; transition-duration:0.5s}
+.portfolioList>li>.overBox:hover{opacity:1}
+.portfolioList>li>.overBox h3{color:#FFF; text-align:center; position:relative; top:45%}
+.portfolioList>li>.overBox p{color:#FFF; text-align:center; position:relative; top:55%}
+
+/*contact us*/
+.contactWrap{}
+.contactWrap>.contact{overflow:hidden; padding-top:40px}
+.contactWrap>.contact h3{font-size:2em; font-weight:900; color:#000; margin-bottom:30px}
+.contactWrap>.contact p{line-height:2em; color:#666}
+
+.contactWrap>.contact>.conLeft label{display:block;line-height:2em; margin-top:20px}
+.contactWrap>.contact>.conLeft input[type=text]{width:95%; border:1px solid #CCC; height:45px}
+.contactWrap>.contact>.conLeft textarea{width:95%; border:1px solid #CCC; height:180px}
+.contactWrap>.contact>.conLeft input[type=submit]{width:100px; height:45px; background-color:#666; color:#FFF; margin-top:20px; border:0}
+.contactWrap>.contact>.conRight{margin-top:40px}
+.contactWrap>.contact>.conRight address{font-style:normal; line-height:2em}
+
+
+
+
+ /*footer start*/
+ footer{width:100%; height:100px; margin:0 auto; border-top:1px solid #CCC; margin-top:30px; background-color:#111;}
+footer>address{text-align:center; font-size:14px; color:#FFF; padding-top:30px}
+footer>p{text-align:center; font-size:14px; color:#FFF; padding-bottom:30px}
+}
+
+
+/*모바일*/
+ @media screen and (max-width:540px){
+ /*header*/
+ #header{position:relative; border-bottom:1px solid #CCC; margin-bottom:10px; width:94%; margin:0 auto}
+#header>h1>a>img{height:46px; margin:0 auto}
+#header>nav{position:relative; display:none}
+#header>nav>ul>li>a{display:block; line-height:60px; color:#666; text-decoration:none; font-size:14px; font-weight:bold; font-family:Arial,sans-serif; text-align:center; background-color:#FFF}
+.lnbBtn{position:absolute; left:10px; top:15px}
+ 
+
+ 
+ /*section*/
+ #contents{position:relative; width:94%; margin:0 auto}
+ #contents>h2{text-align:center; line-height:60px; font-size:1.6em; margin-bottom:40px; border-bottom:1px solid #CCC}
+ 
+ 
+ /*about start*/
+.aboutWrap>img{width:100%}
+.aboutWrap>.aboutTextWrap{overflow:hidden; margin:80px 0}
+.aboutWrap>.aboutTextWrap>.leftText h3{font-size:3em; font-weight:bold; color:#222}
+.aboutWrap>.aboutTextWrap>.leftText p{font-size:1.4em}
+.aboutWrap>.aboutTextWrap>.rightText{text-align:justify; line-height:2em; color:#666; margin-top:50px}
+.aboutWrap>.serviceList{overflow:hidden}
+.aboutWrap>.serviceList>li{margin-bottom:30px}
+.aboutWrap>.serviceList>li img{width:100%}
+.aboutWrap>.serviceList>li h3{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.aboutWrap>.serviceList>li p{text-align:center; line-height:3em}
+
+
+
+.newsWrap>.newsList{overflow:hidden}
+.newsWrap>.newsList>li{margin-bottom:40px}
+.newsWrap>.newsList>li:first-child{float:left; width:100%}
+.newsWrap>.newsList>li img{width:100%; margin-bottom:20px}
+.newsWrap>.newsList>li h3{font:1.2em; font-weight:bold; text-align:center; line-height:3em}
+.newsWrap>.newsList>li p{text-align:center; line-height:2em; height:3em; color:#666}
+
+
+
+/*portfolio*/
+.portfolioList{overflow:hidden}
+.portfolioList>li{position:relative;margin-bottom:20px; height:360px; background-size:cover; background-position:center}
+.portfolioList>li>.overBox{position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.2);
+opacity:0; transition-duration:0.5s}
+.portfolioList>li>.overBox:hover{opacity:1}
+.portfolioList>li>.overBox h3{color:#FFF; text-align:center; position:relative; top:45%}
+.portfolioList>li>.overBox p{color:#FFF; text-align:center; position:relative; top:55%}
+
+/*contact us*/
+.contactWrap{}
+.contactWrap>.contact{overflow:hidden; padding-top:40px}
+.contactWrap>.contact h3{font-size:1.6em; font-weight:900; color:#000; margin-bottom:30px}
+.contactWrap>.contact p{line-height:2em; color:#666}
+
+.contactWrap>.contact>.conLeft label{display:block;line-height:2em; margin-top:20px}
+.contactWrap>.contact>.conLeft input[type=text]{width:95%; border:1px solid #CCC; height:45px}
+.contactWrap>.contact>.conLeft textarea{width:95%; border:1px solid #CCC; height:180px}
+.contactWrap>.contact>.conLeft input[type=submit]{width:100px; height:45px; background-color:#666; color:#FFF; margin-top:20px; border:0}
+.contactWrap>.contact>.conRight{margin-top:40px}
+.contactWrap>.contact>.conRight address{font-style:normal; line-height:2em}
+
+
+
+ /*footer start*/
+ footer{width:100%; height:80px; margin:0 auto; border-top:1px solid #CCC; margin-top:30px; background-color:#111;}
+footer>address{text-align:center; font-size:14px; color:#FFF; padding-top:20px}
+footer>p{text-align:center; font-size:14px; color:#FFF; padding-bottom:20px}
+}
